@@ -145,6 +145,8 @@ img {
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .address :not(:last-child) {
   margin-right: 40px;
@@ -230,12 +232,11 @@ img {
 .item-advantages {
   flex-basis: calc((100% - (3 * 24px)) / 4);
 }
-.icons-advantages {
-  display: block;
-  /* margin-right: auto;
-  margin-left: auto; */
-}
+
 .wrap-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 264px;
   height: 112px;
   padding: 24px 100px;
@@ -279,15 +280,14 @@ img {
 }
 .employee-desc {
   text-align: center;
-  padding: 32px 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.social-items:not(:last-child) {
-  margin-right: 24px;
-}
 .social {
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 24px;
 }
 
 .social-links {
@@ -302,13 +302,17 @@ img {
 .social-icons {
   fill: #f4f4fd;
 }
-.social-links:hover {
+.social-links:hover,
+.social-links:focus {
   background-color: #404bbf;
 }
 
 /* =============/OUR TEAM============= */
 
 /* =============Customers============= */
+.section-heading {
+  line-height: 1.1;
+}
 
 .customers-link {
   display: flex;
@@ -323,7 +327,8 @@ img {
 .customers-icon {
   fill: currentColor;
 }
-.customers-link:hover {
+.customers-link:hover,
+.customers-link:focus {
   color: #404bbf;
   border: 1px solid #404bbf;
 }
@@ -376,6 +381,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  color: var(--primary-background-color);
 }
 .social-footer-link {
   display: flex;
@@ -387,7 +393,8 @@ img {
   border-radius: 50%;
   fill: #f4f4fd;
 }
-.social-footer-link:hover {
+.social-footer-link:hover,
+.social-footer-link:focus {
   background-color: #31d0aa;
 }
 .social-footer {
@@ -459,12 +466,6 @@ img {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.examples-list-link:hover {
-  border: 1px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
 .examples-item {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -477,5 +478,13 @@ img {
 .buttons-portfolio :not(:last-child) {
   margin-right: 24px;
 }
-
+.more {
+  display: block;
+  border: 1px solid #f4f4fd;
+}
+.more:hover,
+.more:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 /* =============/Portfolio=========:==== */
